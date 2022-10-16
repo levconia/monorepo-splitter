@@ -1,0 +1,29 @@
+{
+    "name": "levconia/monorepo-splitter",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Levconia\\MonorepoSplitter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Piotr Kardasz",
+            "email": "piotr@refiniti.pl"
+        }
+    ],
+    "require": {
+        "symfony/console": "^5.4",
+        "symfony/process": "^5.4",
+        "symfony/runtime": "^5.4"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": true
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.4"
+    }
+}

@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+use Levconia\MonorepoSplitter\SplitMonorepoCommand;
+use Symfony\Component\Console\Application;
+
+require __DIR__ . '/vendor/autoload_runtime.php';
+
+return static function () {
+    $app = new Application();
+
+    $command = new SplitMonorepoCommand();
+    $app->add($command);
+    $app->setDefaultCommand($command->getName(), true);
+
+    return $app;
+};
